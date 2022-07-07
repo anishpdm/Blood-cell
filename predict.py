@@ -58,7 +58,7 @@ def image():
     wmask = cv2.inRange(img, wlower, wupper)
 
     # Find the contours
-    wcontours, hierarchy = cv2.findContours(wmask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+    wcontours, hierarchy = cv2.findContours(wmask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)[-2:]
 
     # Count and segment the WBC's
     cv2.drawContours(image, wcontours, -1, (255, 0, 0), 3)
