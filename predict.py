@@ -24,7 +24,7 @@ def image():
     rmask = cv2.inRange(img, rlower, rupper)
 
     # Find the contours
-    rcontours, hierarchy = cv2.findContours(rmask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+    rcontours, hierarchy = cv2.findContours(rmask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)[-2:]
 
     # Count the number of RBC's
     rbc_count = 0
