@@ -104,8 +104,10 @@ if (isset($_POST["but"])) {
         $rbc = $obj->{'rbc'};
         $wbc = $obj->{'wbc'};
         echo "<center> <p class='text-light'> Red Blood cell count : $rbc   </p> </center> <br>";
-        echo "<center><p class='text-light'> White Blood cell count : $wbc </p> </center>";
+        echo "<center><p class='text-light'> White Blood cell count : $wbc </p> </center> <br> ";
+        echo "<center><p class='text-light'> Image </p> </center> <br> ";
 
+        echo "<img src='op.jpg' />";
 
     }
 
