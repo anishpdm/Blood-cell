@@ -90,7 +90,6 @@
 
 
 <?php
-include './db.php';
 if (isset($_POST["but"])) {
 
     $target_dir = "uploads/";
